@@ -41,7 +41,7 @@ T = st.sidebar.selectbox("T stage",('T1','T2','T3','T4'))
 N = st.sidebar.selectbox("N stage",('N0','N1','N2','N3'))
 #Race = st.sidebar.selectbox("Race",('American Indian/Alaska Native','Asian or Pacific Islander','Black','White'),index=3)
 Grade = st.sidebar.selectbox("Grade",('Ⅰ','Ⅱ','Ⅲ','Ⅳ'),index=0)
-Laterality =  st.sidebar.selectbox("Laterality",('Left','Right','Bilateral'))
+Laterality =  st.sidebar.selectbox("Laterality",('Left','Right','Others'))
 Histbehav =  st.sidebar.selectbox("Histbehav",('Adenocarcinoma','Squamous cell carcinoma'
                                                ,'Adenosquamous carcinoma','Large cell carcinoma','other'))
 Chemotherapy = st.sidebar.selectbox("Chemotherapy",('No','Yes'))
@@ -55,7 +55,7 @@ map = {'<55':1,'>=55':2,'Female':1,'Male':0,'American Indian/Alaska Native':1,'A
        'Adenocarcinoma':0,'Squamous cell carcinoma':1,
        'Adenosquamous carcinoma':2,'Large cell carcinoma':3,'other':4,
        'Married':1,'Unmarried':2,
-       'Left':0,'Right':1,'Bilateral':2,
+       'Left':0,'Right':1,'Others':2,
        'No':0,'Yes':1}
 
 Sex =map[Sex]
